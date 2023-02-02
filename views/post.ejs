@@ -1,0 +1,14 @@
+<%- include("partials/header"); %> 
+
+<h1><%=Posts.name%></h1>
+<p><%= Posts.ContentBLog %></p>
+
+<form action="/delete" method="post">
+    <button type="submit" name="btn" class="btn btn-dark" value="<%=Posts._id%>">Delete</button>
+</form>
+<br>
+<form action="/edit" method="post">
+    <button type="submit" name="btn" class="btn btn-dark" value="<%=Posts._id%>">Edit</button>
+</form>
+
+<%- include("partials/footer")%>
